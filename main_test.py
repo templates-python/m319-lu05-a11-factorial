@@ -25,7 +25,7 @@ def test_for_1(capsys, monkeypatch):
     assert captured.out == '120\n'
 
 
-def test_while_1(capsys, monkeypatch):
+def test_for_2(capsys, monkeypatch):
     inputs = iter(['0'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     main.main_for()
